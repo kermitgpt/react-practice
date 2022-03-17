@@ -41,7 +41,7 @@ const Recipe = (props) => {
         <span className="recipe__value">{servings}</span>
       </div>
       <div className="recipe__row">
-        <span className="receipe__label">Instuctions</span>
+        <span className="receipe__label">Instructions</span>
         <div className="recipe__value recipe__instructions recipe__value--indented">
           {instructions}
         </div>
