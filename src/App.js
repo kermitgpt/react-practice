@@ -1,9 +1,19 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import Counter from './components/Counter'
 
+export const ThemeContext = React.createContext()
+
 function App() {
+
+  const [theme, setTheme] = useState('red')
+
   return (
-    <Counter />
+    <ThemeContext.Provider value={{ backgroundColor: theme }}>
+    <Counter initialCount={0} />
+    <button onClick={() => setTheme(prevTheme => {
+      return prevTheme === 'red' ? 'blue' : 'red'
+    })}>Toggle Theme</button>
+    </ThemeContext.Provider>
   )
 }
 
