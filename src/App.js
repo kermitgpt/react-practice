@@ -9,7 +9,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ backgroundColor: theme }}>
-    <Counter initialCount={0} />
+    <Counter initialCount={50} />
     <button onClick={() => setTheme(prevTheme => {
       return prevTheme === 'red' ? 'blue' : 'red'
     })}>Toggle Theme</button>
