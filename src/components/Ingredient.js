@@ -1,11 +1,11 @@
 import React from "react";
 
-const Ingredient = ({name, amount}) => {
+const Ingredient = ({ name, amount }) => {
   return (
-  <>
-    <span>{name}</span>
-    <span>{amount}</span>
-  </>
+    <>
+      <span>{name}</span>
+      <span>{amount}</span>
+    </>
   );
 };
 
