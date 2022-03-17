@@ -6,6 +6,15 @@ const Recipe = (props) => {
   const { handleRecipeDelete } = useContext(RecipeContext);
   const { id, name, cookTime, servings, instructions, ingredients } = props;
 
+  // useEffect (how to use it with API's)
+
+  // useEffect(() => {
+  //   console.log("Render");
+  //   return () => {
+  //     console.log("Unmount");
+  //   };
+  // }, []);
+
   return (
     <div className="recipe">
       <div className="recipe__header">
