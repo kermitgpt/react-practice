@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Counter from './components/Counter'
 
 export const ThemeContext = React.createContext()
