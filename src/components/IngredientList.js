@@ -7,7 +7,7 @@ const IngredientList = ({ingredients}) => {
       return <Ingredient key={ingredient.id} {...ingredient} />
   })
   return (
-    <div>
+    <div className="ingredient-grid">
         {ingredientElements}
     </div>
   )

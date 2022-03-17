@@ -1,23 +1,20 @@
-import React from 'react'
-import Recipe from './Recipe'
+import React from "react";
+import Recipe from "./Recipe";
 
-const RecipeList = ({recipes}) => {
+const RecipeList = ({ recipes }) => {
   return (
-    <>
-    <div>
-        {recipes.map(recipe => {
-        return ( 
-        <Recipe 
-        key={recipe.id} 
-        {...recipe} />
-        )
+    <div className="recipe-list">
+      <div>
+        {recipes.map((recipe) => {
+          return <Recipe key={recipe.id} {...recipe} />;
         })}
+      </div>
+      <div className="recipe-list__add-recipe-btn-container">
+        <button className="btn btn--primary">Add Recipe</button>
+      </div>
+      
     </div>
-    <button>Add Recipe</button>
-    </>
+  );
+};
 
-    
-  )
-}
-
-export default RecipeList
+export default RecipeList;
